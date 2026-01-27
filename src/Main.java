@@ -17,7 +17,7 @@ public class Main {
             int edad = 0;
             if (!Nombre.equals("salir")){
                 System.out.println("intoducca edad: ");
-                sc.nextInt();
+                edad = sc.nextInt();
                 sc.nextLine();
             }
 
@@ -36,9 +36,9 @@ public class Main {
         //mostrar lista
         System.out.println("lista completa: " + lista);
 
-        while(it.hasNext()){
+        while (it.hasNext()) {
             int valor = it.hashCode();
-            if (valor <= 18){
+            if (valor <=18){
                 it.remove();
             }
         }
