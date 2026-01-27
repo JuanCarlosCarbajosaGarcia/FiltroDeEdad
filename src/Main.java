@@ -16,10 +16,12 @@ public class Main {
             String Nombre = sc.nextLine();
             System.out.println("intoducca edad: ");
             int edad = sc.nextInt();
-            lista.add(Nombre);
-            lista.add(edad + "años");
-        }if (.equalsIgnoreCase("salir")){
-            continuar = false;
+                if (Nombre.equalsIgnoreCase("salir")){
+                    continuar = false;
+                }else {
+                    lista.add(Nombre + " ");
+                    lista.add(edad + " años");
+                }
         }
 
 
@@ -30,8 +32,8 @@ public class Main {
         System.out.println("lista completa: " + lista);
 
         while(it.hasNext()){
-            int valor = it.next();
-            if (valor==<18){
+            int valor = it.hashCode();
+            if (valor <= 18){
                 it.remove();
             }
         }
