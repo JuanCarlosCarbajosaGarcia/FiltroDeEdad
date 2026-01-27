@@ -14,8 +14,13 @@ public class Main {
         while (continuar) {
             System.out.println("intoducca nombre: ");
             String Nombre = sc.nextLine();
-            System.out.println("intoducca edad: ");
-            int edad = sc.nextInt();
+            int edad = 0;
+            if (!Nombre.equals("salir")){
+                System.out.println("intoducca edad: ");
+                sc.nextInt();
+                sc.nextLine();
+            }
+
                 if (Nombre.equalsIgnoreCase("salir")){
                     continuar = false;
                 }else {
