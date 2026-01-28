@@ -64,6 +64,7 @@ public class Main {
         }
         //mostrar listra tras eliminar los menores de 18 años
         System.out.println("lista con elementos tras la eliminacion: ");
+        System.out.println("--------------------");
         for (Persona p : lista){
             System.out.println(p);
             System.out.println("--------------------");
